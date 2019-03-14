@@ -23,27 +23,29 @@ class Header extends React.Component {
     render() {
         const { classes } = this.props;
         return (
-            <AppBar position="static">
-                <Toolbar>
-                    <Typography variant="headline" color="inherit">
-                        QTemu
-                    </Typography>
-                    <Grid container spacing={24}>
-                        <Grid item>
-                            <Typography className={classes.buttonMenu}>Create meetup</Typography>
+            <React.Fragment>
+                <AppBar position="static">
+                    <Toolbar>
+                        <Typography variant="headline" color="inherit">
+                            QTemu
+                        </Typography>
+                        <Grid container spacing={24}>
+                            <Grid item>
+                                <Typography className={classes.buttonMenu}>Create meetup</Typography>
+                            </Grid>
+                            <Grid item>
+                                <Typography className={classes.buttonMenu}>Explore</Typography>
+                            </Grid>
+                            <Grid item>
+                                <Typography className={classes.buttonLogin}>Remove</Typography>
+                            </Grid>
                         </Grid>
-                        <Grid item>
-                            <Typography className={classes.buttonMenu}>Explore</Typography>
-                        </Grid>
-                        <Grid item>
-                            <Typography className={classes.buttonLogin}>Remove</Typography>
-                        </Grid>
-                    </Grid>
-                    {/* <Button color="inherit" className={classes.buttonMenu}>Create meetup</Button>
-                    <Button color="inherit" className={classes.buttonMenu}>Explore</Button>
-                    <Button color="inherit" className={classes.buttonLogin}>Login</Button> */}
-                </Toolbar>
-            </AppBar>
+                        {/* <Button color="inherit" className={classes.buttonMenu}>Create meetup</Button>
+                        <Button color="inherit" className={classes.buttonMenu}>Explore</Button>
+                        <Button color="inherit" className={classes.buttonLogin}>Login</Button> */}
+                    </Toolbar>
+                </AppBar>        
+            </React.Fragment>
         );
     }
 }

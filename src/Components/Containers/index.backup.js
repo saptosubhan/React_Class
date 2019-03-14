@@ -159,17 +159,7 @@ class Profile extends React.Component {
                         About Meetup
                     </Typography>
                     <Paper className={classes.paperAboutMeetup}>
-                        <ul>
-                            {
-                                this.props.peoples.map((data, idx) =>{
-                                    return(
-                                        <React.Fragment key={idx}>
-                                            <li>{ data.name}</li>
-                                        </React.Fragment>
-                                    )
-                                })
-                            }
-                        </ul>
+                        Paper
                     </Paper>
                 </Grid>
                 {/* Members */}

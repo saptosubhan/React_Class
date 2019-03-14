@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Header, Footer } from './Layouts'
-import Profile from './Profiles'
+import Containers from './Containers';
 
 class App extends Component {
   constructor(props){
@@ -23,25 +23,15 @@ class App extends Component {
     }
   }
 
-  changeTitle = (val) => {
-    this.setState({
-      title: val,
-      info: 'berubah'
-    })
-  }
-
   render() {
-    let { title, peoples } = this.state
     return (
-      // <div className="App">
       <React.Fragment>
-        <Header/>
+        <Header />
         
-        <Profile peoples={peoples} />
+        <Containers />
 
-        <Footer title={title} />
+        <Footer />
       </React.Fragment>  
-      // </div>
     );
   }
 }

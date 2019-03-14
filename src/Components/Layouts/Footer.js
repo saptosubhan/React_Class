@@ -13,12 +13,12 @@ class Footer extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div>
+      <React.Fragment>
           <br></br>
           <br></br>
           <hr className={classes.batas}></hr>
           <h3><center>Copyright hacktiv8 2018</center></h3>
-      </div>
+      </React.Fragment>
     );
   }
 }
